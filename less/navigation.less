@@ -9,18 +9,34 @@
         h1 {
             .font(6rem); 
             padding-bottom: 1.2rem;
+
+            @media @phone {
+                .font(3rem);
+            }
         }
         .a-items{
          .flex-display(space-evenly, row);
          padding: 1.2rem 0;
+
+            @media @phone {
+                padding:0;
+            }
 
           a {
               .a-tag(#333);
               font-size: 1.8rem;
               padding-right: 5rem;
               font-weight: bold;
+
+              @media @phone {
+                  padding-right: 1.7rem;
+              }
           }
 
+        }
+
+        @media @phone {
+            text-align:center;
         }
     }
 }
