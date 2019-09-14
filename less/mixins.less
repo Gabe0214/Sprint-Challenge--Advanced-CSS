@@ -1,1 +1,42 @@
 // Mixins Here
+
+.flex-display(@justify-content, @flex-direction){
+    display: flex;
+    justify-content: @justify-content;
+    flex-direction: @flex-direction;
+
+}
+
+//font
+
+.font(@font-s) {
+    font-size: @font-s;
+}
+
+.a-tag(@a-color){
+    text-decoration: none;
+    color: @a-color;
+}
+
+
+//button 
+.btn-style(@background-c, @font-c){
+    background: @background-c;
+    color: @font-c; 
+    display: inline-block;
+    padding: 1.2rem 1.9rem;
+
+}
+
+//mobile mixin 
+// p tags
+
+.p-mobile() {
+    padding: 1.5rem;
+    .font(1.5rem); 
+
+}
+
+.heading-mobile() {
+    padding: 1.5rem; 
+}
